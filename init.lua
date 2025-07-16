@@ -884,9 +884,9 @@ require('lazy').setup({
     -- If you want to see what colorschemes are already installed, you can use `:Telescope colorscheme`.
     'Mofiqul/dracula.nvim',
     priority = 1000, -- Make sure to load this before all the other start plugins.
-    opts = {
-      colorscheme = 'dracula',
-    },
+    config = function()
+      vim.cmd.colorscheme 'dracula'
+    end,
   },
 
   -- Highlight todo, notes, etc in comments
