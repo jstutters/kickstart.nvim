@@ -888,6 +888,9 @@ require('lazy').setup({
       -- Load the colorscheme here.
       vim.cmd.colorscheme 'dracula'
     end,
+    opts = {
+      colorscheme = 'dracula',
+    },
   },
 
   -- Highlight todo, notes, etc in comments
