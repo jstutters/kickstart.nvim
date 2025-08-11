@@ -311,6 +311,9 @@ require('lazy').setup({
     ---@type oil.SetupOpts
     opts = {},
     lazy = false,
+    keys = {
+      { '<leader>o', '<cmd>Oil<cr>', desc = 'Oil' },
+    },
   },
 
   -- NOTE: Plugins can also be configured to run Lua code when they are loaded.
